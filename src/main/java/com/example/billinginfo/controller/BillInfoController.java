@@ -16,6 +16,6 @@ public class BillInfoController {
 
     @GetMapping("/bill-info")
     public ResponseEntity<String> getBillingInfo() {
-        return new ResponseEntity<>("billing info port number" + environment.getProperty("server.port"), HttpStatus.OK);
+        return new ResponseEntity<>("billing info port number: " + environment.getProperty("server.port"), HttpStatus.OK);
     }
 }
